@@ -10,7 +10,7 @@ const port = process.env.PORT || 5001;
 
 
 app.use(express.json());
-app.use("/api/posts", require("./routes/postRoutes"));
+app.use("/", require("./routes/postRoutes"));
 app.use(errorHandler);
 
 app.listen(port, () => {
